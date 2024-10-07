@@ -5,62 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ass2.css">
-    <title>MY wepsite</title>
+    <title>My website </title>
 </head>
 
 <body>
-    <div id="about me">
-        <h1>Jana Thuluth</h1>
-        <p>"My name is Jana Thuluth, and I am studying computer science with the goal of becoming a world-class
-            programmer.
-            I enjoy shopping, cooking, and playing handball. One of my greatest achievements is memorizing the entire
-            Quran and mastering its recitation rules,
-            an experience that has taught me patience and discipline in pursuing my goals."</p>
-    </div>
-    <div id="Hobbies">
-        <h2>My Hobbies </h2>
-        <div>
-            <ul>
-                <li><span><a href="https://en.wikipedia.org/wiki/Swimming_(sport)">Swimming</a></span></li>
-                <img src="img/swim.jpg" alt="swimming" width="20%" height="30%">
-                <li> <span><a href="https://en.wikipedia.org/wiki/Cooking">Cooking</a></span></li>
-                <img src="img/cok.jpg" alt="Cooking" width="20%" height="30%">
-                <li><span><a href="https://en.wikipedia.org/wiki/Shopping">Shopping</a></span></li>
-                <img src="img/shop.jpg" alt="Shopping" width="20%" height="30%">
-            </ul>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#future">Future</a></li>
+                <li><a href="#project">My project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="img/JanaProfil.jpg" alt="My picture" class="profile-pic">
+        <p>My name is Jana Thuluth. I am passionate about web development and have been honing my skills for the last few years. I enjoy learning new technologies and applying them to create awesome projects.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="hobby-images">
+            <a href="https://en.wikipedia.org/wiki/Reading_(process)" target="_blank">
+                <img src="img/red.jpg" alt="Reading">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Travel" target="_blank">
+                <img src="img/trave.jpg" alt="Traveling">
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Photography" target="_blank">
+                <img src="img/photo.jpg" alt="Photography">
+            </a>
         </div>
 
+        <div class="hobby-texts">
+            <span>Reading</span>
+            <span>Traveling</span>
+            <span>Photography</span>
+        </div>
+    </section>
 
-
-    </div>
-
-    <div id="goals">
-        <h2> What I want to Be When I Grow Up</h2>
-        <p>
-            "My ambition is to become a world-class programmer, run my own company, and help students who are passionate
-            about programming.
-            I also aim to perfect my memorization of the Quran and be supportive of my parents.
-            Additionally, I strive to build a beautiful life filled with achievements and happiness."
-        </p>
-
-    </div>
-    <div id=" Previous project">
-      <p>  Check out one of my Previous projects: :<a href="https://github.com/JanaThuluth/web1.git"target="_blank">My prroject</a></p>
-    </div>
-
-
-
-    <div id="favorite-hobby-form">
-        <h2>Guess My Favorite Hobby</h2>
-        <form action="/submit-hobby-guess" method="post">
-            <label for="hobby">What do you think my favorite hobby is?</label><br>
-            <input type="text" id="hobby" name="hobby" placeholder="Enter your guess"><br><br>
-            <input type="submit" value="Submit">
+    <section id="favorite-hobby">
+        <h3>Guess My Favorite Hobby</h3>
+        <form>
+            <label for="hobby-guess">What do you think is my favorite hobby?</label>
+            <input type="text" id="hobby-guess" name="hobby-guess">
+            <button type="submit">Submit</button>
         </form>
-    </div>
+    </section>
 
+    <section id="future">
+        <h2>My Future Plans</h2>
+        <p>In the future, I aspire to become a leading expert in web development, specializing in creating innovative solutions for clients and advancing technology in the field.</p>
+    </section>
 
+    <section id="project">
+        <h2>Check Out My Previous Project</h2>
+        <a href="https://github.com/JanaThuluth/web1.git" target="_blank">View my project on GitHub</a>
+    </section>
+
+    <footer>
+        <p>Created by Jana Thuluth. All rights reserved &copy; 2024</p>
+    </footer>
 </body>
 
 </html>
